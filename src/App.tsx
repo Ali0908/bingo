@@ -104,6 +104,21 @@ function ChevronIcon({ open }: { open: boolean }) {
   );
 }
 
+function PlayIcon() {
+  return (
+    <svg
+      className="draw-play-icon"
+      viewBox="0 0 32 32"
+      aria-hidden="true"
+    >
+      <path
+        d="M9 5.5C9 4.3 10.3 3.6 11.3 4.3L27 14.8C28 15.5 28 16.9 27 17.6L11.3 28.1C10.3 28.8 9 28.1 9 26.9V5.5Z"
+        fill="#ffffff"
+      />
+    </svg>
+  );
+}
+
 function App() {
   const {
     currentImage,
@@ -208,9 +223,7 @@ function App() {
               onClick={draw}
               type="button"
             >
-              <span className="draw-play-icon" aria-hidden="true">
-                ▶
-              </span>
+              <PlayIcon />
 
               <span>
                 {draws.length === 0

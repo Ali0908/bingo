@@ -344,10 +344,11 @@ button:focus-visible {
 }
 
 .draw-play-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
   flex-shrink: 0;
-  color: white;
-  font-size: 46px;
-  text-shadow: none;
+  color: #ffffff;
 }
 
 .finished-message {
@@ -609,7 +610,8 @@ button:focus-visible {
   }
 
   .draw-play-icon {
-    font-size: 25px;
+    width: 25px;
+    height: 25px;
   }
 
   .finished-message {
