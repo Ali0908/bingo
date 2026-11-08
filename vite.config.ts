@@ -8,17 +8,20 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico'],
+      includeAssets: [
+        'favicon.ico',
+        'icons/apple-touch-icon.png',
+      ],
       workbox: {
         globPatterns: [
-          '**/*.{js,css,html,ico,png,svg,webp}'
+          '**/*.{js,css,html,ico,png,svg,webp}',
         ],
       },
       manifest: {
         name: 'Bingo',
         short_name: 'Bingo',
         description: 'Jeu de bingo avec tirage aléatoire',
-        theme_color: '#ffffff',
+        theme_color: '#16a05a',
         background_color: '#ffffff',
         display: 'standalone',
         orientation: 'portrait',
